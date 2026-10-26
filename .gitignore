@@ -1,27 +1,11 @@
 # Logs & Test files
 *.log
-test*.png
-comparison*.png
-part1_*.png
-crop_*.png
-*ref*.png
-phone_*.png
-orig_*.png
-centered_circle_preview.png
-curr_avatar_inspect.png
-desk_avatar_crop.png
-desk_top_ref.png
-desk_wave_*.png
-desktop_wave_crop.png
-dev_face_crop.png
-developer.png
-reference_*.png
-wave_*.png
+*.png
+!assets/**/*.png
+test_layout.html
 
 # Dependencies & Build
 node_modules
 .vercel
 .env*
 .playwright-cli
-clean_desk_wave.png
-pure_wave.png

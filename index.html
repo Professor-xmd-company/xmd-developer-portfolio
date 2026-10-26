@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   <title>XMD / DEVELOPER — Portfolio</title>
   <link rel="stylesheet" href="fonts.css" />
   <link rel="stylesheet" href="style.css" />
@@ -10,11 +10,11 @@
 <body class="bg-void">
   <div class="portfolio-container">
     
-    <!-- Ambient Space Glows -->
+    <!-- Atmospheric Space Glows -->
     <div class="ambient-glow glow-avatar"></div>
-    <div class="ambient-glow glow-hero-left"></div>
+    <div class="ambient-glow glow-left"></div>
 
-    <!-- Site Header -->
+    <!-- Site Header (Edge to edge) -->
     <header class="site-header">
       <div class="header-brand">
         <div class="sparkle-icon">
@@ -51,12 +51,14 @@
       </div>
     </header>
 
-    <!-- Hero Content -->
+    <!-- Hero Content (Part 1) -->
     <section class="hero-section">
-      <div class="hero-layout">
+      
+      <!-- Top Row: Typography & Avatar side-by-side -->
+      <div class="hero-top-row">
         
-        <!-- Left Column: Typography & CTAs -->
-        <div class="hero-info">
+        <!-- Left Column: Greeting, Headline, Subtitle -->
+        <div class="hero-text-block">
           
           <!-- Hello Pill -->
           <div class="hello-pill">
@@ -68,83 +70,35 @@
           <!-- Headline -->
           <h1 class="hero-heading">
             <span class="heading-line">I'm a Software</span>
-            <span class="heading-line">Developer who builds</span>
-            <span class="gradient-text grad-cyan-pink">modern web</span>
-            <span class="gradient-text grad-purple-peach">experiences.</span>
+            <span class="heading-line line-nowrap">Developer who builds</span>
+            <span class="heading-line"><span class="gradient-text grad-cyan-pink">modern web</span></span>
+            <span class="heading-line"><span class="gradient-text grad-purple-peach">experiences.</span></span>
           </h1>
 
           <!-- Subtitle -->
           <p class="hero-description">
-            I create fast, beautiful and scalable web<br>
-            applications using modern technologies.
+            I create fast, beautiful and scalable web<br class="desc-break"> applications using modern technologies.
           </p>
-
-          <!-- CTAs -->
-          <div class="cta-group">
-            <a href="#projects" class="btn btn-primary">
-              <span>View My Projects</span>
-              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4.5 11.5L11.5 4.5"/>
-                <path d="M5.5 4.5H11.5V10.5"/>
-              </svg>
-            </a>
-
-            <a href="#cv" class="btn btn-secondary">
-              <span>Download CV</span>
-              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M8 3v8m0 0l-3-3m3 3l3-3"/>
-                <path d="M3 13h10"/>
-              </svg>
-            </a>
-          </div>
-
-          <!-- Social Icons -->
-          <div class="social-strip">
-            <a href="https://github.com" target="_blank" rel="noopener" class="social-glass-btn" aria-label="GitHub">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-              </svg>
-            </a>
-            <a href="https://x.com" target="_blank" rel="noopener" class="social-glass-btn" aria-label="X">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-              </svg>
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-glass-btn" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-              </svg>
-            </a>
-            <a href="mailto:contact@xmd.dev" class="social-glass-btn" aria-label="Email">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="4" width="20" height="16" rx="2"/>
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-              </svg>
-            </a>
-          </div>
 
         </div>
 
-        <!-- Right Column: Avatar Presentation (Clean, Glorious Neon Ring, No Card, No Streaks) -->
-        <div class="hero-avatar-col">
-          
-          <div class="avatar-wrapper">
-            
-            <!-- Dual-tone Glowing Neon Ring SVG -->
-            <svg class="neon-ring-svg" viewBox="0 0 300 300">
+        <!-- Right Column: Avatar with Dual-Tone Glowing Neon Ring -->
+        <div class="hero-avatar-block">
+          <div class="avatar-presentation">
+            <svg class="neon-ring-svg" viewBox="0 0 240 240">
               <defs>
-                <linearGradient id="avatar-neon-grad" x1="0%" y1="15%" x2="100%" y2="85%">
-                  <stop offset="0%" stop-color="#00e5ff"/>
-                  <stop offset="25%" stop-color="#0084ff"/>
-                  <stop offset="50%" stop-color="#8b5cf6"/>
-                  <stop offset="75%" stop-color="#f43f5e"/>
-                  <stop offset="90%" stop-color="#ff3b5c"/>
-                  <stop offset="100%" stop-color="#ff5533"/>
+                <linearGradient id="neon-ring-gradient" x1="0%" y1="15%" x2="100%" y2="85%">
+                  <stop offset="0%" stop-color="#00f0ff"/>
+                  <stop offset="30%" stop-color="#0072ff"/>
+                  <stop offset="55%" stop-color="#8a2be2"/>
+                  <stop offset="80%" stop-color="#ff007f"/>
+                  <stop offset="95%" stop-color="#ff3b5c"/>
+                  <stop offset="100%" stop-color="#ff6020"/>
                 </linearGradient>
-                <filter id="ring-glow-filter" x="-30%" y="-30%" width="160%" height="160%">
-                  <feGaussianBlur stdDeviation="4" result="blur1"/>
-                  <feGaussianBlur stdDeviation="10" result="blur2"/>
-                  <feGaussianBlur stdDeviation="20" result="blur3"/>
+                <filter id="neon-glow-filter" x="-30%" y="-30%" width="160%" height="160%">
+                  <feGaussianBlur stdDeviation="3" result="blur1"/>
+                  <feGaussianBlur stdDeviation="8" result="blur2"/>
+                  <feGaussianBlur stdDeviation="16" result="blur3"/>
                   <feMerge>
                     <feMergeNode in="blur3"/>
                     <feMergeNode in="blur2"/>
@@ -154,29 +108,69 @@
                 </filter>
               </defs>
               <!-- Outer Diffuse Soft Glow -->
-              <circle cx="150" cy="150" r="138" stroke="url(#avatar-neon-grad)" stroke-width="5" fill="none" filter="url(#ring-glow-filter)" opacity="0.9"/>
-              <!-- Vibrant Neon Tube Stroke -->
-              <circle cx="150" cy="150" r="138" stroke="url(#avatar-neon-grad)" stroke-width="3" fill="none"/>
-              <!-- Intense White Specular Core -->
-              <circle cx="150" cy="150" r="138" stroke="#ffffff" stroke-width="1" fill="none" opacity="0.45"/>
+              <circle cx="120" cy="120" r="110" stroke="url(#neon-ring-gradient)" stroke-width="4.5" fill="none" filter="url(#neon-glow-filter)" opacity="0.9"/>
+              <!-- Crisp Neon Tube -->
+              <circle cx="120" cy="120" r="110" stroke="url(#neon-ring-gradient)" stroke-width="2.6" fill="none"/>
+              <!-- High-specular White Core -->
+              <circle cx="120" cy="120" r="110" stroke="#ffffff" stroke-width="0.8" fill="none" opacity="0.45"/>
             </svg>
 
-            <!-- Bright Lens Flares -->
-            <div class="flare flare-bottom-right"></div>
-            <div class="flare flare-top-right"></div>
+            <!-- Dual-tone Neon Ring SVG -->
 
-            <!-- Circular Developer Photo Frame -->
-            <div class="avatar-circle">
-              <img src="assets/images/developer_avatar.png" alt="Developer Portrait" class="avatar-photo" />
+            <!-- Profile Picture Circle -->
+            <div class="avatar-inner-circle">
+              <img src="assets/images/developer_avatar.png" alt="XMD Developer" class="avatar-img" />
             </div>
-
           </div>
-
         </div>
 
       </div>
 
-      <!-- Bottom Wavy Particle Mesh Ribbon -->
+      <!-- Actions Row: Side-by-side CTAs -->
+      <div class="hero-actions-row">
+        <a href="#projects" class="btn btn-primary">
+          <span>View My Projects</span>
+          <svg class="btn-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4.5 11.5L11.5 4.5"/>
+            <path d="M5.5 4.5H11.5V10.5"/>
+          </svg>
+        </a>
+
+        <a href="#cv" class="btn btn-secondary">
+          <span>Download CV</span>
+          <svg class="btn-download" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 3v8m0 0l-3-3m3 3l3-3"/>
+            <path d="M3 13h10"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Social Icons Row -->
+      <div class="hero-socials-row">
+        <a href="https://github.com/Professor-xmd-company" target="_blank" rel="noopener" class="social-glass-btn" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+        </a>
+        <a href="https://x.com" target="_blank" rel="noopener" class="social-glass-btn" aria-label="X">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-glass-btn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+        <a href="mailto:contact@xmd.dev" class="social-glass-btn" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Edge-to-Edge Particle Mesh Wave Line -->
       <div class="particle-ribbon-container">
         <img src="assets/images/clean_wave_slice.png" alt="Particle Mesh Divider" class="wave-ribbon-img" />
       </div>
